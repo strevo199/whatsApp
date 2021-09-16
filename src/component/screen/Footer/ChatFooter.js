@@ -3,7 +3,6 @@ import {Link,useLocation} from 'react-router-dom';
 
 const ChatFooter = () => {
     const location =useLocation().pathname
-    console.log(location);
     return (
         <div className="flex-1 flex bg-gray-200">
             <ul className="flex-1 flex  justify-around items-center">

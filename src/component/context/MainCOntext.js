@@ -1,6 +1,6 @@
 import React,{createContext,useReducer} from 'react'
 import mainReducer from '../reducer/mainReducer'
-import {useLocation} from 'react-router-dom'
+import {useLocation,useParams} from 'react-router-dom'
 
 export const MainCOntext = createContext()
 
@@ -1223,7 +1223,6 @@ const MainCOntextProvider = ({children}) => {
     const checkForFooter = () =>{
 
         if (location.pathname ==='/phoneauth') {
-            console.log('yes');
             setTimeout(() => {
                 document.querySelector('.body').style.height = '85vh'
                 document.querySelector('.footer').classList.replace('flex','hidden')
@@ -1234,11 +1233,14 @@ const MainCOntextProvider = ({children}) => {
     }
     checkForFooter()
 
+
+    
     return (
         <MainCOntext.Provider value ={{
             checkForFooter,
             countries:state.countries,
-            time:state.time
+            time:state.time,
+
 
         }}>
             {children}
