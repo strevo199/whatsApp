@@ -1,0 +1,17 @@
+body{
+  font-family:-apply-system,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.app{
+  height: 100vh;
+  }
+
+.navbar{
+  height: 15vh;
+}
+.footer{
+  height: 15vh;
+}
+.body{
+  height: 70vh;
+}
