@@ -1,0 +1,6 @@
+.pchat{
+    background: url(../../image/bg1.jpg),linear-gradient(#000000,#000000);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
