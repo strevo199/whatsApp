@@ -1,12 +1,28 @@
 import React from 'react'
-import NavBar from './NavBar'
 import Body from './Body/Body'
 import Footer from './Footer/Footer'
 import '../AllCss/route.css'
+import NavBar from './Navs/NavBar'
+import { withRouter } from 'react-router'
 
-const Routes = () => {
+const Routes = (props) => {
+
+    const changePathForNowDev = () =>{
+        if (props.location.pathname === '/') {
+            props.history.push('/phoneauth')
+        }
+        if (props.location.pathname === '/phoneauth') {
+            setTimeout(() => {
+                props.history.push('/chat')
+            }, 5000);
+        }
+
+    }
+    changePathForNowDev()
+
     return (
         <div className ="route">
+            
             <NavBar/>
             <Body/>
             <Footer/>
@@ -14,4 +30,4 @@ const Routes = () => {
     )
 }
 
-export default Routes
+export default withRouter(Routes)

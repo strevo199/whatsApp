@@ -1220,24 +1220,24 @@ const MainCOntextProvider = ({children}) => {
     const [state, dispatch] = useReducer(mainReducer, initialState)
     const location = useLocation()
 
-    const checkForFooter = () =>{
+    // const checkForFooter = () =>{
 
-        if (location.pathname ==='/phoneauth') {
-            setTimeout(() => {
-                document.querySelector('.body').style.height = '85vh'
-                document.querySelector('.footer').classList.replace('flex','hidden')
+    //     if (location.pathname ==='/phoneauth') {
+    //         setTimeout(() => {
+    //             document.querySelector('.body').style.height = '85vh'
+    //             document.querySelector('.footer').classList.replace('flex','hidden')
                 
-            }, 50);
-        } 
+    //         }, 50);
+    //     } 
        
-    }
-    checkForFooter()
+    // }
+    // checkForFooter()
 
 
     
     return (
         <MainCOntext.Provider value ={{
-            checkForFooter,
+            // checkForFooter,
             countries:state.countries,
             time:state.time,
 

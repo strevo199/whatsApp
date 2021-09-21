@@ -7,11 +7,12 @@ body{
   }
 
 .navbar{
-  height: 15vh;
+  height: 13vh;
 }
 .footer{
-  height: 15vh;
+  height: 12vh;
 }
 .body{
-  height: 70vh;
+  height: 75vh;
+  /* overflow-y: scroll; */
 }
